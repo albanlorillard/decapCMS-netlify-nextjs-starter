@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { attributes, react as HomeContent } from 'content/pages/home.md'
 export default function Home() {
 
-  let { title, cats } = attributes
+  let { title, cats, image } = attributes
   return (
     <>
     <Head>
@@ -12,6 +12,7 @@ export default function Home() {
     </Head>
     <article>
       <h1>{title}</h1>
+      <img src={image} />
       <HomeContent />
       <ul>
         {cats.map((cat, k) => (

@@ -3,6 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
+locale: fr
 collections:
   - name: "pages"
     label: "Pages"
@@ -20,3 +21,4 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
+        - { label: 'Cover Image', name: 'image', widget: 'image'}
